@@ -112,7 +112,7 @@ export class ViewNotes extends React.Component {
 
   render() {
     return (
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10 font-poppins px-6">
         <InputNotes 
             newData={this.state.newData}
             maxLengthTitle={this.state.maxLengthTitle}

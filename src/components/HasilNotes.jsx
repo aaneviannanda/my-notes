@@ -16,16 +16,16 @@ export const HasilNotes = ({
 
   return (
     <div className="className">
-      <h2 className="mt-5 text-3xl font-bold text-center text-gray-700">
+      <h2 className="mt-6 text-3xl font-bold text-center text-gray-700">
         Notes
       </h2>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 mt-11">
         <div className="flex justify-start">
             <button
             className={`min-w-[44px] min-h-[44px] px-4 rounded-md cursor-pointer ${
                 statusNotes === "note"
-                ? "bg-green-400"
-                : "hover:bg-green-100"
+                ? "bg-teal-400"
+                : "hover:bg-teal-200"
             }`}
             onClick={() => onChangeStatusNotes("note")}
             >
@@ -69,7 +69,7 @@ export const HasilNotes = ({
                   />
                 ))
             ) : (
-                <h1 className="">Data Not Found</h1>
+                  <h1 className="absolute left-[17em] top-[10em] text-red-500 font-semibold">Data Not Found!</h1>
             )}
           </>
         )}
@@ -97,7 +97,7 @@ export const HasilNotes = ({
                   />
                 ))
             ) : (
-              <h1>Data Not Found</h1>
+                <h1 className="absolute left-[17em] top-[10em] text-red-500 font-semibold">Data Not Found!</h1>
             )}
           </>
         )}
