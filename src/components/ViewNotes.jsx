@@ -85,6 +85,7 @@ export class ViewNotes extends React.Component {
     const newData = this.state.newData;
     const title = newData.title;
     const body = newData.body;
+    // this.setState({ maxLengthTitle: 50, maxLengthBody: 225 });
 
     this.setState({
       data: [
@@ -96,7 +97,9 @@ export class ViewNotes extends React.Component {
           archived: false,
           createdAt: new Date().toISOString(),
         }
-      ]
+      ],
+      maxLengthTitle: 50,
+      maxLengthBody: 225,
     });
 
     this.setState((prevData) => {
